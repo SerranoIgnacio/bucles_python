@@ -19,6 +19,7 @@ print('terminó el bucle while')
 # x sea menor a 5
 valor_maximo = 5
 
+
 # Volvemos a iniciar x en un valor, pero
 # para variar x iniciará en 2
 x = 2
