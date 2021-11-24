@@ -12,6 +12,9 @@
 # Dado la siguiente lista de colores, utilizar "for"
 # para imprimir en pantalla todos los colores
 colores = ['rojo', 'naranja', 'verde', 'azul']
+i = 0
+for i in range(len(colores)):
+    print(f'El color en la ubicacion {i} de la lista es: {colores[i]}')
 
 # Itere el "for" utilizando la lista como parámero
 # y utilizar como elemento del "for" cada color
