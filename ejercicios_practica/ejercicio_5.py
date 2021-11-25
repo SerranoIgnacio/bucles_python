@@ -21,7 +21,7 @@ fin = int(input('Ingrese el último número de la secuencia\n'))
 sumatoria = 0  # Inicializo el contador en 0
 
 # for ... in range(....)
-
+fin += 1
 for x in range(inicio, fin):
     if inicio < fin:
         sumatoria += inicio
