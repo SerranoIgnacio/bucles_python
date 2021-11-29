@@ -18,7 +18,7 @@ notas = [70, 82, -1, 65, 55, 67, 87, 92, -1]
 Enunciado:
 Similar al ejercicio de "calificaciones":
 
-Debe caluclar el promedio de todas las notas que se encuentra
+Debe calcular el promedio de todas las notas que se encuentra
 almacenadas en una lista llamada "notas" que ya
 hemos definido al comienzo del archivo
 
@@ -48,11 +48,38 @@ cantidad_ausentes = 0   # Aquí debe contar cuantos ausentes hubo
 
 # Realice aquí el bucle para recorrer todas las notas
 # y cacular la sumatoria
-
+i = 0
+while i < len(notas):
+    if notas[i] >= 0:
+        sumatoria += notas[i]
+        cantidad_notas += 1
+    else:
+        cantidad_ausentes += 1
+    if notas[i] >= 90:
+        print('La nota es A')
+    elif notas[i] >= 80:
+        print('La nota es B')
+    elif notas[i] >= 70:
+        print('La nota es C')
+    elif notas[i] >= 60:
+        print('La nota es D')
+    elif notas[i] < 60:
+        print('La nota es F')
+    i += 1
 # Terminado el bucle calcule el promedio como
-# promedio = sumatoria / cantidad_notas
+promedio = sumatoria / cantidad_notas
 
 # Utilice la nota promedio calculada y transformela
 # a calificación con letras, imprima en pantalla el resultado
-
+if promedio >= 90:
+    print('La nota promedio es A')
+elif promedio >= 80:
+    print('La nota promedio es B')
+elif promedio >= 70:
+    print('La nota promedio es C')
+elif promedio >= 60:
+    print('La nota promedio es D')
+elif promedio < 60:
+    print('La nota promedio es F')
 # Imprima en pantalla al cantidad de ausentes
+print(f'La cantidad de Ausentes son: {cantidad_ausentes}')
