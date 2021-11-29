@@ -35,3 +35,28 @@ alguno de lo soportados o no es la palabra "FIN".
 
 print("Mi Calculadora (^_^)")
 # Empezar aquí la resolución del ejercicio
+
+while True:
+    num1 = int(input('Ingrese el primer número\n'))
+    num2 = int(input('Ingrese el siguiente número\n'))
+    ope = input('Ingrese el signo de la operacion(+, -, *, /, **) o la palabra FIN: ')
+    if (ope == '+') or (ope == '-') or (ope == '/') or (ope == '*') or (ope == '**') or (ope == 'fin'):
+        if (ope == 'fin'):
+            num1 == 0
+            num2 == 0
+            res == 0
+            False
+        elif ope == '+':
+            res = num1 + num2
+        elif ope == '-':
+            res = num1 - num2
+        elif ope == '*':
+            res = num1 * num2
+        elif ope == '/':
+            res = num1 / num2
+        elif ope == '**':
+            res = num1 ** num2
+        print(f'La operacion fue {ope} y el resultado: {res}')
+    else:
+        print('Error al seleccionar el operador')
+        False
