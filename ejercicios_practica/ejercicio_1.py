@@ -15,25 +15,24 @@ x = 0
 # Además, complete la línea de código necesaria para que
 # el valor de "x" incremente "1" en cada iteración
 condicion = False
-i = 0
 # reemplace "condicion" por lo que crea necesario
-while i < 6:
-
-    x += 1    
-    print("Valor de x =", x)
+while x < 6:
+    print("Valor de x incrementando =", x)
+       
     # Coloque la línea de código para que "x" incremente "1"
+    x += 1 
     if x == 6:
         break
-x = 0
+    
 # Dado el siguiente "while", complete la condicion
 # para que el "while" itere siempre que <x sea mayor o igual a 0>
 # Además, complete la línea de código necesaria para que
 # el valor de "x" decremente "1" en cada iteración
 
 while x >= 0:    # reemplace "condicion" por lo que crea necesario
-    x += 1
-    print("Valor de x =", x)
+    print("Valor de x decrementando =", x)
     # Coloque la línea de código para que "x" decremente "1"
+    x -= 1
     if x == 6:
         break
 print("terminamos!")
