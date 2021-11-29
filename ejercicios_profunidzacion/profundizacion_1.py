@@ -32,19 +32,14 @@ fin = int(input('Ingrese el último número de la secuencia\n'))
 
 cantidad_numeros = 0
 sumatoria = 0
-
-ls_numeros = []
-
-ls_numeros.append(inicio)
-ls_numeros.append(fin)
-
+fin += 1
 # bucle.....
-for i in range(len(ls_numeros)):
-    cantidad_numeros = len(ls_numeros)
-    sumatoria += ls_numeros[i]
+for i in range(inicio, fin):
+    cantidad_numeros += 1
+    sumatoria += i
 
 # Al terminar el bucle calcular el promedio como:
 promedio = sumatoria / cantidad_numeros
 
 # Imprimir resultado en pantalla
-print('El promedio es', promedio)
+print(f'El promedio es {promedio}')
